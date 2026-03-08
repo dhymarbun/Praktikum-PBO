@@ -21,10 +21,7 @@ public class Mahasiswa {
         kendaraan = new Kendaraan(); // komposisi
     }
 
-    // konstruktor dengan parameter
-    public Mahasiswa(String nim, String nama, String prodi,
-                     String noPlat, String jenis) {
-
+    public Mahasiswa(String nim, String nama, String prodi) {
         this.nim = nim;
         this.nama = nama;
         this.prodi = prodi;
@@ -32,8 +29,7 @@ public class Mahasiswa {
         listMatKul = new MataKuliah[50];
         jumlahMatKul = 0;
 
-        // KOMPOSISI
-        this.kendaraan = new Kendaraan(noPlat, jenis);
+        kendaraan = new Kendaraan(); 
     }
 
     /*************** MUTATOR ***************/
@@ -54,8 +50,8 @@ public class Mahasiswa {
         this.dosenWali = dosenWali;
     }
 
-    public void setKendaraan(String noPlat, String jenis){
-        this.kendaraan = new Kendaraan(noPlat, jenis); // tetap komposisi
+    public void setKendaraan(Kendaraan kendaraan){
+        this.kendaraan = kendaraan;
     }
 
     /*************** SELEKTOR ***************/
@@ -183,18 +179,18 @@ class Dosen {
 class MataKuliah{
 
     private String idMatkul;
-    private String namaMatkul;
+    private String NamaMatkul;
     private int sks;
 
     public MataKuliah(){
         idMatkul = "";
-        namaMatkul = "";
+        NamaMatkul = "";
         sks = 0;
     }
 
-        public MataKuliah(String idMatkul, String namaMatkul, int sks) {
+        public MataKuliah(String idMatkul, String NamaMatkul, int sks) {
         this.idMatkul = idMatkul;
-        this.namaMatkul = namaMatkul;
+        this.NamaMatkul = NamaMatkul;
         this.sks = sks;
     }
 
@@ -202,8 +198,8 @@ class MataKuliah{
         this.idMatkul = idMatkul;
     }
 
-    public void setnamaMatkul(String namaMatkul) {
-        this.namaMatkul = namaMatkul;
+    public void setNamaMatkul(String NamaMatkul) {
+        this.NamaMatkul = NamaMatkul;
     }
 
     public void setsks(int sks) {
@@ -214,11 +210,11 @@ class MataKuliah{
         return idMatkul;
     }
 
-    public String getnamaMatkul() {
-        return namaMatkul;
+    public String getNamaMatkul() {
+        return NamaMatkul;
     }
 
-    public int getsks() {
+    public int getSks() {
         return sks;
     }
 }
@@ -244,8 +240,9 @@ class Kendaraan {
 
     public void setJenis(String jenis) {
         this.jenis = jenis;
+    }
 
-    public String getNoPlat() {
+    public String getNoPlat(){
         return noPlat;
     }
 
