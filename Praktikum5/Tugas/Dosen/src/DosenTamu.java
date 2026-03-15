@@ -6,11 +6,7 @@ public class DosenTamu extends Dosen {
     private String nidk;
     private LocalDate tglAkhirKontrak;
 
-    public DosenTamu(String nip, String nidk, String nama,
-                     LocalDate tanggalLahir, LocalDate tmt,
-                     double gajiPokok, String fakultas,
-                     LocalDate tglAkhirKontrak) {
-
+    public DosenTamu(String nip, String nidk, String nama, LocalDate tanggalLahir, LocalDate tmt, double gajiPokok, String fakultas, LocalDate tglAkhirKontrak) {
         super(nip, nama, tanggalLahir, tmt, gajiPokok, fakultas);
         this.nidk = nidk;
         this.tglAkhirKontrak = tglAkhirKontrak;
