@@ -5,7 +5,7 @@
  * Tanggal    : 22 Maret 2026
  */
 
-public class Persegi extends BangunDatar {
+public class Persegi extends BangunDatar implements IResize{
     private double sisi;
 
     public Persegi() {
@@ -37,6 +37,21 @@ public class Persegi extends BangunDatar {
 
     public double getDiagonal() {
         return sisi * Math.sqrt(2);
+    }
+
+    @Override
+    public void zoomIn() {
+        sisi *= 1.1;
+    }
+
+    @Override
+    public void zoomOut() {
+        sisi *= 0.9;
+    }
+
+    @Override
+    public void zoom(int percent) {
+        sisi = sisi * percent/100;
     }
 
     @Override

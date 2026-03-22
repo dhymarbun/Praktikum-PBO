@@ -5,7 +5,7 @@
  * Tanggal    : 22 Maret 2026
  */
 
-public class Lingkaran extends BangunDatar {
+public class Lingkaran extends BangunDatar implements IResize {
     private double jari;
 
     public Lingkaran() {
@@ -39,6 +39,21 @@ public class Lingkaran extends BangunDatar {
         return jari;
     }
 
+    @Override
+    public void zoomIn() {
+        jari *= 1.1;
+    }
+
+    @Override
+    public void zoomOut() {
+        jari *= 0.9;
+    }
+
+    @Override
+    public void zoom(int percent) {
+        jari = jari * percent/100;
+    }
+    
     @Override
     public void printInfo() {
         System.out.println("Warna: " + getWarna());

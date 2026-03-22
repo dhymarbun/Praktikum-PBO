@@ -17,7 +17,7 @@ public class MBangunDatar {
 
         L2.printInfo();
         System.out.println();
-        
+
         P1.isEqualKeliling(P2);
         System.out.println("Apakah keliling P1 sama dengan P2? " + P1.isEqualKeliling(P2));
         P1.isEqualLuas(P2);
@@ -26,5 +26,37 @@ public class MBangunDatar {
         System.out.println("Apakah keliling L1 sama dengan L2? " + L1.isEqualKeliling(L2));
         L1.isEqualLuas(L2);
         System.out.println("Apakah luas L1 sama dengan L2? " + L1.isEqualLuas(L2));
-    }   
+
+    P2.zoomIn();
+    System.out.println("Setelah zoom in:");
+    P2.printInfo();
+    System.out.println();
+
+    P2.zoomOut();
+    System.out.println("Setelah zoom out:");
+    P2.printInfo();
+    System.out.println();
+
+    P2.zoom(150);
+    System.out.println("Setelah zoom 150%:");
+    P2.printInfo();
+    System.out.println();
+
+    L2.zoomIn();
+    System.out.println("Setelah zoom in:");
+    L2.printInfo();
+    System.out.println();
+
+    L2.zoomOut();
+    System.out.println("Setelah zoom out:");
+    L2.printInfo();
+    System.out.println();
+
+    L2.zoom(200);
+    System.out.println("Setelah zoom 200%:");
+    L2.printInfo();
+    System.out.println();
+
+    } 
+
 }
