@@ -1,3 +1,4 @@
++
 import java.time.LocalDate;
 
 /*
@@ -22,7 +23,7 @@ public abstract class Manusia {
         counterMns++;
     }
 
-    public String getNama() {
+    public String  getNama() {
         return nama;
     }
 
@@ -34,7 +35,7 @@ public abstract class Manusia {
         return tanggalMulaiKerja;
     }
 
-    public void setTanggalMulaiKerja(LocalDate tanggalMulaiKerja) {
+  public void setTanggalMulaiKerja(LocalDate tanggalMulaiKerja) {
         this.tanggalMulaiKerja = tanggalMulaiKerja;
     }
 
