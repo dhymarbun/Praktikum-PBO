@@ -4,7 +4,7 @@
  */
 
 public class MainDAO{
-    public static void main(String[] args[]){
+    public static void main(String[] args){
         Person person = new Person("Indra");
 
         DAOManager m = new DAOManager();

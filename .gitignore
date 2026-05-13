@@ -3,3 +3,5 @@
 .vscode/
 bin/
 target/
+/Praktikum10/Prak10/jdbc_mhs_service/nbproject/private/
+/Praktikum10/Prak10/jdbc_mhs_service/build/
