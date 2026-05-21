@@ -18,7 +18,7 @@ public class MysqlUtility {
                 Class.forName("com.mysql.cj.jdbc.Driver");
 
                 // Sesuaikan host, port, nama db
-                String url = "jdbc:mysql://localhost:3306/jdbc_mhs";
+                String url = "jdbc:mysql://localhost:3306/pbo";
 
                 // sesuaikan username dan password
                 String user = "root";
